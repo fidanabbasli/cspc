@@ -12,6 +12,6 @@ t0 = time.perf_counter()
 simulate(N0, lam)
 t_vec = time.perf_counter() - t0
 
-print(f"Loop icra vaxtı:       {t_loop:.4f} saniyə")
-print(f"NumPy icra vaxtı:      {t_vec:.4f} saniyə")
-print(f"NumPy {t_loop / t_vec:.1f} dəfə daha sürətlidir!")
+print(f"Loop execution time:       {t_loop:.4f} second")
+print(f"NumPy execution time:      {t_vec:.4f} second")
+print(f"NumPy {t_loop / t_vec:.1f} times faster!")

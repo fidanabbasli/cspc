@@ -18,7 +18,7 @@ def test_matches_law():
     dt = 0.05
     n_simulations = 200
 
-    # seed=None yazırıq ki, hər dəfə həqiqətən fərqli təsadüfi simulyasiya yaransın
+   
     results = [simulate(N0, lam, dt=dt, seed=None) for _ in range(n_simulations)]
     mean_decay = np.mean(results, axis=0)
 
